@@ -11,10 +11,10 @@ function App() {
   const [activePageIndex, setActivePageIndex] = useState(0);
 
   const NAVBAR_ITEMS = [
-    { icon: "🏠", text: "home", component: <HomePage update={update} /> },
-    { icon: "🖼️", text: "About", component: <AboutPage update={update} /> },
-    { icon: "🔍", text: "search", component: <SearchPage update={update} /> },
-    { icon: "🤦", text: "Profile", component: <ProfilePage update={update} /> },
+    { icon: "🏠", text: "home", component: <HomePage /> },
+    { icon: "🖼️", text: "About", component: <AboutPage /> },
+    { icon: "🔍", text: "search", component: <SearchPage /> },
+    { icon: "🤦", text: "Profile", component: <ProfilePage /> },
   ];
 
   const activePage = NAVBAR_ITEMS[activePageIndex].component;
